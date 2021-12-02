@@ -1,18 +1,19 @@
+// íŒ©í† ë¦¬ì–¼ì„ êµ¬í•˜ëŠ” ì¬ê·€í•¨ìˆ˜
 #include <stdio.h>
 
 long factorial(int n)
 {
 	printf("factorial(%d)\n", n);
 
-	if (n <= 1) return 1;						// n=1ÀÏ ¶§ factorial(1)¿¡ 1À» ¹İÈ¯ÇÏ°í Àç±ÍÈ£ÃâÀ» ³¡³¿
-	else return n * factorial(n - 1);			// n°ú factorial ÇÔ¼ö¿¡ (n - 1)À» ³Ö¾î¼­ ¹İÈ¯µÈ °ªÀ» °öÇÔ
+	if (n <= 1) return 1;						// n=1ì¼ ë•Œ factorial(1)ì— 1ì„ ë°˜í™˜í•˜ê³  ì¬ê·€í˜¸ì¶œì„ ëëƒ„
+	else return n * factorial(n - 1);				// nê³¼ factorial í•¨ìˆ˜ì— (n - 1)ì„ ë„£ì–´ì„œ ë°˜í™˜ëœ ê°’ì„ ê³±í•¨
 }
 
 int main(void)
 {
 	int n;
-	printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+	printf("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
 	scanf("%d", &n);
-	printf("%d!Àº %dÀÔ´Ï´Ù. \n", n, factorial(n));
+	printf("%d!ì€ %dì…ë‹ˆë‹¤. \n", n, factorial(n));
 	return(0);
 }

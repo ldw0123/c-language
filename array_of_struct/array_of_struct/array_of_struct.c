@@ -3,8 +3,8 @@
 #include <stdio.h>
 #define SIZE 3
 
-struct student {			// 구조체 student를 선언함. / student는 number, name, grade의 3개의 멤버로 정의된다. / 아직 구조체 변수는 선언되지 않음.
-	int number;				// 구조체를 함수의 내부에도 선언할 수 있지만, 함수의 외부에 선언하면 파일의 모든 함수에서 사용할 수 있음.
+struct student {		// 구조체 student를 선언함. / student는 number, name, grade의 3개의 멤버로 정의된다. / 아직 구조체 변수는 선언되지 않음.
+	int number;			// 구조체를 함수의 내부에도 선언할 수 있지만, 함수의 외부에 선언하면 파일의 모든 함수에서 사용할 수 있음.
 	char name[20];
 	double grade;
 };
